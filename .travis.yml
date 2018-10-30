@@ -1,0 +1,5 @@
+language: visualbasic
+solution: VisualProgrammingApplication6.sln
+dotnet: 4.6.1
+script:
+  - dotnet restore
