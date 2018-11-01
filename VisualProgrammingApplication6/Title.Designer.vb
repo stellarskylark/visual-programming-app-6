@@ -94,7 +94,7 @@ Partial Class Title
         Me.lblTestLabel.Name = "lblTestLabel"
         Me.lblTestLabel.Size = New System.Drawing.Size(94, 13)
         Me.lblTestLabel.TabIndex = 7
-        Me.lblTestLabel.Text = "This is a test lable."
+        Me.lblTestLabel.Text = "This is a test label."
         '
         'Title
         '
