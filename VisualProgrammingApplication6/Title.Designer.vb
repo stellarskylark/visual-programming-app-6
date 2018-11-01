@@ -28,6 +28,7 @@ Partial Class Title
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnCustom = New System.Windows.Forms.Button()
         Me.lblCopyright = New System.Windows.Forms.Label()
+        Me.lblTestLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -86,11 +87,21 @@ Partial Class Title
         Me.lblCopyright.TabIndex = 6
         Me.lblCopyright.Text = "Oklahoma Baptist University - © 2018"
         '
+        'lblTestLabel
+        '
+        Me.lblTestLabel.AutoSize = True
+        Me.lblTestLabel.Location = New System.Drawing.Point(101, 189)
+        Me.lblTestLabel.Name = "lblTestLabel"
+        Me.lblTestLabel.Size = New System.Drawing.Size(94, 13)
+        Me.lblTestLabel.TabIndex = 7
+        Me.lblTestLabel.Text = "This is a test lable."
+        '
         'Title
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(240, 346)
+        Me.Controls.Add(Me.lblTestLabel)
         Me.Controls.Add(Me.lblCopyright)
         Me.Controls.Add(Me.btnCustom)
         Me.Controls.Add(Me.btnAbout)
@@ -110,4 +121,5 @@ Partial Class Title
     Friend WithEvents btnAbout As Button
     Friend WithEvents btnCustom As Button
     Friend WithEvents lblCopyright As Label
+    Friend WithEvents lblTestLabel As Label
 End Class
