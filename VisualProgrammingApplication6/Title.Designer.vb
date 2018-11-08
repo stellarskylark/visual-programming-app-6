@@ -1,34 +1,33 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Title
-	Inherits System.Windows.Forms.Form
+    Inherits System.Windows.Forms.Form
 
-	'Form overrides dispose to clean up the component list.
-	<System.Diagnostics.DebuggerNonUserCode()> _
-	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-		Try
-			If disposing AndAlso components IsNot Nothing Then
-				components.Dispose()
-			End If
-		Finally
-			MyBase.Dispose(disposing)
-		End Try
-	End Sub
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
 
-	'Required by the Windows Form Designer
-	Private components As System.ComponentModel.IContainer
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
 
-	'NOTE: The following procedure is required by the Windows Form Designer
-	'It can be modified using the Windows Form Designer.  
-	'Do not modify it using the code editor.
-	<System.Diagnostics.DebuggerStepThrough()> _
-	Private Sub InitializeComponent()
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnCustom = New System.Windows.Forms.Button()
         Me.lblCopyright = New System.Windows.Forms.Label()
-        Me.lblTestLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -87,21 +86,11 @@ Partial Class Title
         Me.lblCopyright.TabIndex = 6
         Me.lblCopyright.Text = "Oklahoma Baptist University - © 2018"
         '
-        'lblTestLabel
-        '
-        Me.lblTestLabel.AutoSize = True
-        Me.lblTestLabel.Location = New System.Drawing.Point(101, 189)
-        Me.lblTestLabel.Name = "lblTestLabel"
-        Me.lblTestLabel.Size = New System.Drawing.Size(94, 13)
-        Me.lblTestLabel.TabIndex = 7
-        Me.lblTestLabel.Text = "This is a test label."
-        '
         'Title
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(240, 346)
-        Me.Controls.Add(Me.lblTestLabel)
         Me.Controls.Add(Me.lblCopyright)
         Me.Controls.Add(Me.btnCustom)
         Me.Controls.Add(Me.btnAbout)
@@ -121,5 +110,4 @@ Partial Class Title
     Friend WithEvents btnAbout As Button
     Friend WithEvents btnCustom As Button
     Friend WithEvents lblCopyright As Label
-    Friend WithEvents lblTestLabel As Label
 End Class
