@@ -22,45 +22,60 @@ Partial Class About
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ProjectLabel = New System.Windows.Forms.Label()
-        Me.VersionLabel = New System.Windows.Forms.Label()
-        Me.GameDescription = New System.Windows.Forms.TextBox()
+        Me.lblAbout = New System.Windows.Forms.Label()
+        Me.lblVersion = New System.Windows.Forms.Label()
+        Me.txtGameDescription = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'ProjectLabel
+        'lblAbout
         '
-        Me.ProjectLabel.AutoSize = True
-        Me.ProjectLabel.Location = New System.Drawing.Point(167, 30)
-        Me.ProjectLabel.Name = "ProjectLabel"
-        Me.ProjectLabel.Size = New System.Drawing.Size(49, 17)
-        Me.ProjectLabel.TabIndex = 0
-        Me.ProjectLabel.Text = "About:"
+        Me.lblAbout.AutoSize = True
+        Me.lblAbout.Location = New System.Drawing.Point(27, 9)
+        Me.lblAbout.Name = "lblAbout"
+        Me.lblAbout.Size = New System.Drawing.Size(49, 17)
+        Me.lblAbout.TabIndex = 0
+        Me.lblAbout.Text = "About:"
         '
-        'VersionLabel
+        'lblVersion
         '
-        Me.VersionLabel.AutoSize = True
-        Me.VersionLabel.Location = New System.Drawing.Point(167, 77)
-        Me.VersionLabel.Name = "VersionLabel"
-        Me.VersionLabel.Size = New System.Drawing.Size(96, 17)
-        Me.VersionLabel.TabIndex = 1
-        Me.VersionLabel.Text = "Version: 0.0.1"
+        Me.lblVersion.AutoSize = True
+        Me.lblVersion.Location = New System.Drawing.Point(27, 37)
+        Me.lblVersion.Name = "lblVersion"
+        Me.lblVersion.Size = New System.Drawing.Size(96, 17)
+        Me.lblVersion.TabIndex = 1
+        Me.lblVersion.Text = "Version: 0.0.1"
         '
-        'GameDescription
+        'txtGameDescription
         '
-        Me.GameDescription.Location = New System.Drawing.Point(30, 120)
-        Me.GameDescription.Multiline = True
-        Me.GameDescription.Name = "GameDescription"
-        Me.GameDescription.Size = New System.Drawing.Size(320, 172)
-        Me.GameDescription.TabIndex = 2
+        Me.txtGameDescription.Location = New System.Drawing.Point(30, 120)
+        Me.txtGameDescription.Multiline = True
+        Me.txtGameDescription.Name = "txtGameDescription"
+        Me.txtGameDescription.Size = New System.Drawing.Size(320, 172)
+        Me.txtGameDescription.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.Menu
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Lime
+        Me.Label1.Location = New System.Drawing.Point(178, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(135, 62)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "$$$"
         '
         'About
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(409, 344)
-        Me.Controls.Add(Me.GameDescription)
-        Me.Controls.Add(Me.VersionLabel)
-        Me.Controls.Add(Me.ProjectLabel)
+        Me.ClientSize = New System.Drawing.Size(391, 320)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtGameDescription)
+        Me.Controls.Add(Me.lblVersion)
+        Me.Controls.Add(Me.lblAbout)
         Me.Name = "About"
         Me.Text = "About"
         Me.ResumeLayout(False)
@@ -68,7 +83,8 @@ Partial Class About
 
     End Sub
 
-    Friend WithEvents ProjectLabel As Label
-    Friend WithEvents VersionLabel As Label
-    Friend WithEvents GameDescription As TextBox
+    Friend WithEvents lblAbout As Label
+    Friend WithEvents lblVersion As Label
+    Friend WithEvents txtGameDescription As TextBox
+    Friend WithEvents Label1 As Label
 End Class
