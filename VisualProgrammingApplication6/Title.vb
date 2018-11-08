@@ -13,4 +13,8 @@
     Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
         Settings.Show()
     End Sub
+
+    Private Sub btnCustom_Click(sender As Object, e As EventArgs) Handles btnCustom.Click
+        Custom.Show()
+    End Sub
 End Class

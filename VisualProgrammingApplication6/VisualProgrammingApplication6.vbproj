@@ -79,6 +79,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Custom.Designer.vb">
+      <DependentUpon>Custom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
@@ -111,6 +117,9 @@
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom.resx">
+      <DependentUpon>Custom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
