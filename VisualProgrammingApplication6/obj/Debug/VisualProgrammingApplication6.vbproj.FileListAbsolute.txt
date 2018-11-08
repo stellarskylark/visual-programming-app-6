@@ -1,0 +1,14 @@
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.vbprojAssemblyReference.cache
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.About.resources
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.Resources.resources
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.Settings.resources
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.Title.resources
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.vbproj.GenerateResource.cache
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.vbproj.CoreCompileInputs.cache
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\bin\Debug\VisualProgrammingApplication6.exe.config
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\bin\Debug\VisualProgrammingApplication6.exe
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\bin\Debug\VisualProgrammingApplication6.pdb
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\bin\Debug\VisualProgrammingApplication6.xml
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.exe
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.xml
+C:\Users\Will\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.pdb
