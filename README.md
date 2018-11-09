@@ -13,7 +13,7 @@ it will prompt you to do that. Install it, then in Command Prompt run:
 
 ```bash
 git fetch upstream
-git merge upstream/desktop
+git merge upstream/master
 ```
 
 If it tells you that you have new changes, either commit or discard those changes, then try again.
