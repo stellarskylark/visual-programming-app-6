@@ -18,6 +18,12 @@ git merge upstream/desktop
 
 If it tells you that you have new changes, either commit or discard those changes, then try again.
 
+If it tells you that `upstream` does not exist, run
+
+```
+git remote add upstream https://github.com/astroengisci/visual-programming-app-6.git
+```
+
 If you have merge conflicts, you will need to resolve those by committing the merge and then 
 manually adjusting the files. Visual Studio will help you here by not compiling until you have
 successfully resolved the conflicts.
