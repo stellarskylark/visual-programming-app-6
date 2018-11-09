@@ -24,13 +24,13 @@ Partial Class Custom
     Private Sub InitializeComponent()
         Me.lblPrompt = New System.Windows.Forms.Label()
         Me.lblCorrectAnswer = New System.Windows.Forms.Label()
-        Me.lblincorrect1 = New System.Windows.Forms.Label()
-        Me.lblincorrect2 = New System.Windows.Forms.Label()
-        Me.lblincorrect3 = New System.Windows.Forms.Label()
+        Me.lblIncorrect1 = New System.Windows.Forms.Label()
+        Me.lblIncorrect2 = New System.Windows.Forms.Label()
+        Me.lblIncorrect3 = New System.Windows.Forms.Label()
         Me.txtCorrectAnswer = New System.Windows.Forms.TextBox()
-        Me.txtincorrect2 = New System.Windows.Forms.TextBox()
-        Me.txtincorrect3 = New System.Windows.Forms.TextBox()
-        Me.txtincorrect1 = New System.Windows.Forms.TextBox()
+        Me.txtIncorrect2 = New System.Windows.Forms.TextBox()
+        Me.txtIncorrect3 = New System.Windows.Forms.TextBox()
+        Me.txtIncorrect1 = New System.Windows.Forms.TextBox()
         Me.txtQuestionPrompt = New System.Windows.Forms.TextBox()
         Me.lstCustQuestions = New System.Windows.Forms.ListBox()
         Me.btnSaveQuestion = New System.Windows.Forms.Button()
@@ -58,35 +58,35 @@ Partial Class Custom
         Me.lblCorrectAnswer.TabIndex = 5
         Me.lblCorrectAnswer.Text = "Correct Answer:"
         '
-        'lblincorrect1
+        'lblIncorrect1
         '
-        Me.lblincorrect1.AutoSize = True
-        Me.lblincorrect1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblincorrect1.Location = New System.Drawing.Point(12, 102)
-        Me.lblincorrect1.Name = "lblincorrect1"
-        Me.lblincorrect1.Size = New System.Drawing.Size(119, 16)
-        Me.lblincorrect1.TabIndex = 6
-        Me.lblincorrect1.Text = "Incorrect Answer 1:"
+        Me.lblIncorrect1.AutoSize = True
+        Me.lblIncorrect1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIncorrect1.Location = New System.Drawing.Point(12, 102)
+        Me.lblIncorrect1.Name = "lblIncorrect1"
+        Me.lblIncorrect1.Size = New System.Drawing.Size(119, 16)
+        Me.lblIncorrect1.TabIndex = 6
+        Me.lblIncorrect1.Text = "Incorrect Answer 1:"
         '
-        'lblincorrect2
+        'lblIncorrect2
         '
-        Me.lblincorrect2.AutoSize = True
-        Me.lblincorrect2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblincorrect2.Location = New System.Drawing.Point(12, 128)
-        Me.lblincorrect2.Name = "lblincorrect2"
-        Me.lblincorrect2.Size = New System.Drawing.Size(119, 16)
-        Me.lblincorrect2.TabIndex = 7
-        Me.lblincorrect2.Text = "Incorrect Answer 2:"
+        Me.lblIncorrect2.AutoSize = True
+        Me.lblIncorrect2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIncorrect2.Location = New System.Drawing.Point(12, 128)
+        Me.lblIncorrect2.Name = "lblIncorrect2"
+        Me.lblIncorrect2.Size = New System.Drawing.Size(119, 16)
+        Me.lblIncorrect2.TabIndex = 7
+        Me.lblIncorrect2.Text = "Incorrect Answer 2:"
         '
-        'lblincorrect3
+        'lblIncorrect3
         '
-        Me.lblincorrect3.AutoSize = True
-        Me.lblincorrect3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblincorrect3.Location = New System.Drawing.Point(12, 154)
-        Me.lblincorrect3.Name = "lblincorrect3"
-        Me.lblincorrect3.Size = New System.Drawing.Size(119, 16)
-        Me.lblincorrect3.TabIndex = 8
-        Me.lblincorrect3.Text = "Incorrect Answer 3:"
+        Me.lblIncorrect3.AutoSize = True
+        Me.lblIncorrect3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIncorrect3.Location = New System.Drawing.Point(12, 154)
+        Me.lblIncorrect3.Name = "lblIncorrect3"
+        Me.lblIncorrect3.Size = New System.Drawing.Size(119, 16)
+        Me.lblIncorrect3.TabIndex = 8
+        Me.lblIncorrect3.Text = "Incorrect Answer 3:"
         '
         'txtCorrectAnswer
         '
@@ -95,26 +95,26 @@ Partial Class Custom
         Me.txtCorrectAnswer.Size = New System.Drawing.Size(159, 20)
         Me.txtCorrectAnswer.TabIndex = 9
         '
-        'txtincorrect2
+        'txtIncorrect2
         '
-        Me.txtincorrect2.Location = New System.Drawing.Point(137, 127)
-        Me.txtincorrect2.Name = "txtincorrect2"
-        Me.txtincorrect2.Size = New System.Drawing.Size(159, 20)
-        Me.txtincorrect2.TabIndex = 10
+        Me.txtIncorrect2.Location = New System.Drawing.Point(137, 127)
+        Me.txtIncorrect2.Name = "txtIncorrect2"
+        Me.txtIncorrect2.Size = New System.Drawing.Size(159, 20)
+        Me.txtIncorrect2.TabIndex = 10
         '
-        'txtincorrect3
+        'txtIncorrect3
         '
-        Me.txtincorrect3.Location = New System.Drawing.Point(137, 153)
-        Me.txtincorrect3.Name = "txtincorrect3"
-        Me.txtincorrect3.Size = New System.Drawing.Size(159, 20)
-        Me.txtincorrect3.TabIndex = 11
+        Me.txtIncorrect3.Location = New System.Drawing.Point(137, 153)
+        Me.txtIncorrect3.Name = "txtIncorrect3"
+        Me.txtIncorrect3.Size = New System.Drawing.Size(159, 20)
+        Me.txtIncorrect3.TabIndex = 11
         '
-        'txtincorrect1
+        'txtIncorrect1
         '
-        Me.txtincorrect1.Location = New System.Drawing.Point(137, 101)
-        Me.txtincorrect1.Name = "txtincorrect1"
-        Me.txtincorrect1.Size = New System.Drawing.Size(159, 20)
-        Me.txtincorrect1.TabIndex = 12
+        Me.txtIncorrect1.Location = New System.Drawing.Point(137, 101)
+        Me.txtIncorrect1.Name = "txtIncorrect1"
+        Me.txtIncorrect1.Size = New System.Drawing.Size(159, 20)
+        Me.txtIncorrect1.TabIndex = 12
         '
         'txtQuestionPrompt
         '
@@ -170,13 +170,13 @@ Partial Class Custom
         Me.Controls.Add(Me.btnSaveQuestion)
         Me.Controls.Add(Me.lstCustQuestions)
         Me.Controls.Add(Me.txtQuestionPrompt)
-        Me.Controls.Add(Me.txtincorrect1)
-        Me.Controls.Add(Me.txtincorrect3)
-        Me.Controls.Add(Me.txtincorrect2)
+        Me.Controls.Add(Me.txtIncorrect1)
+        Me.Controls.Add(Me.txtIncorrect3)
+        Me.Controls.Add(Me.txtIncorrect2)
         Me.Controls.Add(Me.txtCorrectAnswer)
-        Me.Controls.Add(Me.lblincorrect3)
-        Me.Controls.Add(Me.lblincorrect2)
-        Me.Controls.Add(Me.lblincorrect1)
+        Me.Controls.Add(Me.lblIncorrect3)
+        Me.Controls.Add(Me.lblIncorrect2)
+        Me.Controls.Add(Me.lblIncorrect1)
         Me.Controls.Add(Me.lblCorrectAnswer)
         Me.Controls.Add(Me.lblPrompt)
         Me.Name = "Custom"
@@ -188,13 +188,13 @@ Partial Class Custom
 
     Friend WithEvents lblPrompt As Label
     Friend WithEvents lblCorrectAnswer As Label
-    Friend WithEvents lblincorrect1 As Label
-    Friend WithEvents lblincorrect2 As Label
-    Friend WithEvents lblincorrect3 As Label
+    Friend WithEvents lblIncorrect1 As Label
+    Friend WithEvents lblIncorrect2 As Label
+    Friend WithEvents lblIncorrect3 As Label
     Friend WithEvents txtCorrectAnswer As TextBox
-    Friend WithEvents txtincorrect2 As TextBox
-    Friend WithEvents txtincorrect3 As TextBox
-    Friend WithEvents txtincorrect1 As TextBox
+    Friend WithEvents txtIncorrect2 As TextBox
+    Friend WithEvents txtIncorrect3 As TextBox
+    Friend WithEvents txtIncorrect1 As TextBox
     Friend WithEvents txtQuestionPrompt As TextBox
     Friend WithEvents lstCustQuestions As ListBox
     Friend WithEvents btnSaveQuestion As Button
