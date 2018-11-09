@@ -27,3 +27,18 @@ git remote add upstream https://github.com/astroengisci/visual-programming-app-6
 If you have merge conflicts, you will need to resolve those by committing the merge and then 
 manually adjusting the files. Visual Studio will help you here by not compiling until you have
 successfully resolved the conflicts.
+
+The conflict will look something like this:
+
+```
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> master
+```
+
+Here, the space above the `=======` is the state of the file from the primary repo, HEAD, and 
+everything below is the state of the file in `master` (your local copy). Decide which parts 
+need to stay and which need to be removed, and delete the conflict markers.
