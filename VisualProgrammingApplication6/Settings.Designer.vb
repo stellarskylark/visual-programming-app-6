@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Settings
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Settings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblDiifficulty = New System.Windows.Forms.Label()
         Me.cboDifficulty = New System.Windows.Forms.ComboBox()
@@ -31,9 +31,6 @@ Partial Class Settings
         Me.numTimer = New System.Windows.Forms.NumericUpDown()
         Me.lblSeconds = New System.Windows.Forms.Label()
         Me.btnClearCustomSets = New System.Windows.Forms.Button()
-        Me.lblQuestionNum = New System.Windows.Forms.Label()
-        Me.cboQuestionNum = New System.Windows.Forms.ComboBox()
-        Me.btnSaveChanges = New System.Windows.Forms.Button()
         CType(Me.numTimer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,9 +46,7 @@ Partial Class Settings
         '
         'cboDifficulty
         '
-        Me.cboDifficulty.DisplayMember = "Easy"
         Me.cboDifficulty.FormattingEnabled = True
-        Me.cboDifficulty.Items.AddRange(New Object() {"Easy", "Medium", "Hard", "Extreme"})
         Me.cboDifficulty.Location = New System.Drawing.Point(105, 8)
         Me.cboDifficulty.Name = "cboDifficulty"
         Me.cboDifficulty.Size = New System.Drawing.Size(135, 21)
@@ -60,7 +55,6 @@ Partial Class Settings
         'cboQuestionSet
         '
         Me.cboQuestionSet.FormattingEnabled = True
-        Me.cboQuestionSet.Items.AddRange(New Object() {"All", "History", "Science", "Pop Culture", "Custom"})
         Me.cboQuestionSet.Location = New System.Drawing.Point(105, 40)
         Me.cboQuestionSet.Name = "cboQuestionSet"
         Me.cboQuestionSet.Size = New System.Drawing.Size(135, 21)
@@ -121,42 +115,11 @@ Partial Class Settings
         Me.btnClearCustomSets.Text = "Clear Custom Sets"
         Me.btnClearCustomSets.UseVisualStyleBackColor = True
         '
-        'lblQuestionNum
-        '
-        Me.lblQuestionNum.AutoSize = True
-        Me.lblQuestionNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQuestionNum.Location = New System.Drawing.Point(12, 104)
-        Me.lblQuestionNum.Name = "lblQuestionNum"
-        Me.lblQuestionNum.Size = New System.Drawing.Size(141, 16)
-        Me.lblQuestionNum.TabIndex = 14
-        Me.lblQuestionNum.Text = "Number Of Questions: "
-        '
-        'cboQuestionNum
-        '
-        Me.cboQuestionNum.FormattingEnabled = True
-        Me.cboQuestionNum.Items.AddRange(New Object() {"15", "30", "45", "60", "80", "100"})
-        Me.cboQuestionNum.Location = New System.Drawing.Point(159, 104)
-        Me.cboQuestionNum.Name = "cboQuestionNum"
-        Me.cboQuestionNum.Size = New System.Drawing.Size(135, 21)
-        Me.cboQuestionNum.TabIndex = 15
-        '
-        'btnSaveChanges
-        '
-        Me.btnSaveChanges.Location = New System.Drawing.Point(254, 174)
-        Me.btnSaveChanges.Name = "btnSaveChanges"
-        Me.btnSaveChanges.Size = New System.Drawing.Size(102, 32)
-        Me.btnSaveChanges.TabIndex = 16
-        Me.btnSaveChanges.Text = "Save Changes"
-        Me.btnSaveChanges.UseVisualStyleBackColor = True
-        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 218)
-        Me.Controls.Add(Me.btnSaveChanges)
-        Me.Controls.Add(Me.cboQuestionNum)
-        Me.Controls.Add(Me.lblQuestionNum)
         Me.Controls.Add(Me.btnClearCustomSets)
         Me.Controls.Add(Me.lblSeconds)
         Me.Controls.Add(Me.numTimer)
@@ -183,7 +146,4 @@ Partial Class Settings
     Friend WithEvents numTimer As NumericUpDown
     Friend WithEvents lblSeconds As Label
     Friend WithEvents btnClearCustomSets As Button
-    Friend WithEvents lblQuestionNum As Label
-    Friend WithEvents cboQuestionNum As ComboBox
-    Friend WithEvents btnSaveChanges As Button
 End Class

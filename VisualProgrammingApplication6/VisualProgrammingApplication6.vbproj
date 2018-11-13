@@ -73,23 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Game.Designer.vb">
       <DependentUpon>Game.vb</DependentUpon>
     </Compile>
     <Compile Include="Game.vb">
-=======
-    <Compile Include="About.Designer.vb">
-      <DependentUpon>About.vb</DependentUpon>
-    </Compile>
-    <Compile Include="About.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Custom.Designer.vb">
-      <DependentUpon>Custom.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Custom.vb">
->>>>>>> upstream/master
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.Designer.vb">
@@ -122,16 +109,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.vb</DependentUpon>
-=======
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Custom.resx">
-      <DependentUpon>Custom.vb</DependentUpon>
->>>>>>> upstream/master
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
