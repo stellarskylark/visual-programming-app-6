@@ -17,4 +17,12 @@
     Private Sub btnCustom_Click(sender As Object, e As EventArgs) Handles btnCustom.Click
         Custom.Show()
     End Sub
+
+    Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
+
+    End Sub
+
+    Private Sub Title_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
