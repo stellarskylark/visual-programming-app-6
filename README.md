@@ -42,3 +42,6 @@ ask your question in IRC.
 Here, the space above the `=======` is the state of the file from the primary repo, HEAD, and 
 everything below is the state of the file in `master` (your local copy). Decide which parts 
 need to stay and which need to be removed, and delete the conflict markers.
+
+Note that if the merge conflict is in your `.vbproj` or `.sln` file, you will have to resolve 
+them with a text editor before you can open the project in Visual Studio.
