@@ -59,7 +59,7 @@ Partial Class Game
         Me.btnQuit.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.ForeColor = System.Drawing.Color.ForestGreen
         Me.btnQuit.Location = New System.Drawing.Point(323, 507)
-        Me.btnQuit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnQuit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(100, 28)
         Me.btnQuit.TabIndex = 46
@@ -86,9 +86,9 @@ Partial Class Game
         Me.GroupBox2.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.ForestGreen
         Me.GroupBox2.Location = New System.Drawing.Point(51, 326)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(789, 145)
         Me.GroupBox2.TabIndex = 41
         Me.GroupBox2.TabStop = False
@@ -97,7 +97,7 @@ Partial Class Game
         '
         Me.btnAnswer3.AutoSize = True
         Me.btnAnswer3.Location = New System.Drawing.Point(444, 39)
-        Me.btnAnswer3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAnswer3.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnswer3.Name = "btnAnswer3"
         Me.btnAnswer3.Size = New System.Drawing.Size(67, 23)
         Me.btnAnswer3.TabIndex = 19
@@ -109,7 +109,7 @@ Partial Class Game
         '
         Me.btnAnswer1.AutoSize = True
         Me.btnAnswer1.Location = New System.Drawing.Point(8, 39)
-        Me.btnAnswer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAnswer1.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnswer1.Name = "btnAnswer1"
         Me.btnAnswer1.Size = New System.Drawing.Size(89, 23)
         Me.btnAnswer1.TabIndex = 17
@@ -121,7 +121,7 @@ Partial Class Game
         '
         Me.btnAnswer4.AutoSize = True
         Me.btnAnswer4.Location = New System.Drawing.Point(444, 82)
-        Me.btnAnswer4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAnswer4.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnswer4.Name = "btnAnswer4"
         Me.btnAnswer4.Size = New System.Drawing.Size(78, 23)
         Me.btnAnswer4.TabIndex = 20
@@ -133,7 +133,7 @@ Partial Class Game
         '
         Me.btnAnswer2.AutoSize = True
         Me.btnAnswer2.Location = New System.Drawing.Point(8, 82)
-        Me.btnAnswer2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAnswer2.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnswer2.Name = "btnAnswer2"
         Me.btnAnswer2.Size = New System.Drawing.Size(75, 23)
         Me.btnAnswer2.TabIndex = 18
@@ -146,7 +146,7 @@ Partial Class Game
         Me.btnConfirm.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConfirm.ForeColor = System.Drawing.Color.ForestGreen
         Me.btnConfirm.Location = New System.Drawing.Point(191, 507)
-        Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4)
         Me.btnConfirm.Name = "btnConfirm"
         Me.btnConfirm.Size = New System.Drawing.Size(100, 28)
         Me.btnConfirm.TabIndex = 45
@@ -173,7 +173,7 @@ Partial Class Game
         Me.btnHelpAdd.Font = New System.Drawing.Font("Bookman Old Style", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHelpAdd.ForeColor = System.Drawing.Color.Gold
         Me.btnHelpAdd.Location = New System.Drawing.Point(824, 267)
-        Me.btnHelpAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHelpAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHelpAdd.Name = "btnHelpAdd"
         Me.btnHelpAdd.Size = New System.Drawing.Size(193, 52)
         Me.btnHelpAdd.TabIndex = 43
@@ -187,7 +187,7 @@ Partial Class Game
         Me.btnHelpStop.Font = New System.Drawing.Font("Bookman Old Style", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHelpStop.ForeColor = System.Drawing.Color.Gold
         Me.btnHelpStop.Location = New System.Drawing.Point(563, 267)
-        Me.btnHelpStop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHelpStop.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHelpStop.Name = "btnHelpStop"
         Me.btnHelpStop.Size = New System.Drawing.Size(224, 52)
         Me.btnHelpStop.TabIndex = 42
@@ -201,7 +201,7 @@ Partial Class Game
         Me.btnHelp50.Font = New System.Drawing.Font("Bookman Old Style", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHelp50.ForeColor = System.Drawing.Color.Gold
         Me.btnHelp50.Location = New System.Drawing.Point(308, 267)
-        Me.btnHelp50.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHelp50.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHelp50.Name = "btnHelp50"
         Me.btnHelp50.Size = New System.Drawing.Size(213, 52)
         Me.btnHelp50.TabIndex = 40
@@ -215,7 +215,7 @@ Partial Class Game
         Me.btnHelpShow.Font = New System.Drawing.Font("Bookman Old Style", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHelpShow.ForeColor = System.Drawing.Color.Gold
         Me.btnHelpShow.Location = New System.Drawing.Point(51, 267)
-        Me.btnHelpShow.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHelpShow.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHelpShow.Name = "btnHelpShow"
         Me.btnHelpShow.Size = New System.Drawing.Size(224, 52)
         Me.btnHelpShow.TabIndex = 39
@@ -254,7 +254,7 @@ Partial Class Game
         Me.Controls.Add(Me.btnHelpStop)
         Me.Controls.Add(Me.btnHelp50)
         Me.Controls.Add(Me.btnHelpShow)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Game"
         Me.Text = "Who Wants to Be a Millionaire?"
         Me.GroupBox2.ResumeLayout(False)

@@ -8,6 +8,11 @@
     'Dim TotalMinutes As Integer = 0
     Dim TotalSeconds As Integer = 150
 
+    Dim stopTimeClicked = 0
+    Dim addTimeClicked = 0
+    Dim help50Clicked = 0
+    Dim helpCorrectClicked = 0
+
     Dim CorrectAnswer = 1
 	Dim CorrectAnswerText As String
 
@@ -65,8 +70,13 @@
         'minutes = TotalMinutes
         fixTime()
         seconds = TotalSeconds
+        Timer1.Enabled = True
+        btnAnswer1.Show()
+        btnAnswer2.Show()
+        btnAnswer3.Show()
+        btnAnswer4.Show()
 
-	End Sub
+    End Sub
 
 	Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
 
@@ -168,4 +178,64 @@
 	Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 		decrement()
 	End Sub
+
+    Private Sub btnHelpStop_Click(sender As Object, e As EventArgs) Handles btnHelpStop.Click
+        If stopTimeClicked = 0 Then
+            Timer1.Enabled = False
+            stopTimeClicked += 1
+            btnHelpStop.Text = ""
+        End If
+    End Sub
+
+    Private Sub btnHelpAdd_Click(sender As Object, e As EventArgs) Handles btnHelpAdd.Click
+        If addTimeClicked = 0 Then
+            seconds = TotalSeconds
+            addTimeClicked += 1
+            btnHelpAdd.Text = ""
+        End If
+    End Sub
+
+    Private Sub btnHelp50_Click(sender As Object, e As EventArgs) Handles btnHelp50.Click
+        If help50Clicked = 0 Then
+            If CorrectAnswer = 1 Then
+                btnAnswer2.Hide()
+                btnAnswer3.Hide()
+            ElseIf CorrectAnswer = 2 Then
+                btnAnswer1.Hide()
+                btnAnswer4.Hide()
+            ElseIf CorrectAnswer = 3 Then
+                btnAnswer1.Hide()
+                btnAnswer4.Hide()
+            Else
+                btnAnswer2.Hide()
+                btnAnswer3.Hide()
+            End If
+            help50Clicked += 1
+            btnHelp50.Text = ""
+        End If
+    End Sub
+
+    Private Sub btnHelpShow_Click(sender As Object, e As EventArgs) Handles btnHelpShow.Click
+        If helpCorrectClicked = 0 Then
+            If CorrectAnswer = 1 Then
+                btnAnswer2.Hide()
+                btnAnswer3.Hide()
+                btnAnswer4.Hide()
+            ElseIf CorrectAnswer = 2 Then
+                btnAnswer1.Hide()
+                btnAnswer3.Hide()
+                btnAnswer4.Hide()
+            ElseIf CorrectAnswer = 3 Then
+                btnAnswer1.Hide()
+                btnAnswer2.Hide()
+                btnAnswer4.Hide()
+            Else
+                btnAnswer1.Hide()
+                btnAnswer2.Hide()
+                btnAnswer3.Hide()
+            End If
+            helpCorrectClicked += 1
+            btnHelpShow.Text = ""
+        End If
+    End Sub
 End Class
