@@ -6,7 +6,7 @@
 	Dim minutes As Integer
 	Dim seconds As Integer
 	Dim TotalMinutes As Integer = 0
-	Dim TotalSeconds As Integer = 45
+	Dim TotalSeconds As Integer = 10
 
 	Dim CorrectAnswer = 1
 	Dim CorrectAnswerText As String
@@ -16,8 +16,13 @@
 	Private Sub LoadNewQuestion()
 		' Get random question
 		Dim rnd = New Random()
+		If Questions.Count = 0 Then ' Sanity check
+			Questions = Title.Questions
+		End If
+
 		Dim Question = Questions(
 							rnd.Next(0, Title.Questions.Count - 1))
+
 		Questions.Remove(Question) ' To prevent duplication
 
 		CorrectAnswerText = Question.Correct
@@ -86,6 +91,7 @@
 		End If
 
 		LoadNewQuestion()
+		lblScore.Text = "$" + Correct.ToString
 	End Sub
 
 	Private Sub QuitGame()
@@ -99,7 +105,7 @@
 
 
 	Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-		lblScore.Text = "$" + Correct.ToString
+		lblScore.Text = "$0"
 
 		Me.Questions = Title.Questions
 		If NumToAsk < Questions.Count Then ' Sanity check
@@ -119,8 +125,11 @@
 			seconds = 59
 		End If
 		If minutes < 0 Then
-			minutes = TotalMinutes
-			seconds = 0
+			Asked += 1
+			If Asked >= NumToAsk Then
+				QuitGame()
+			End If
+			LoadNewQuestion()
 		End If
 		displayTimer()
 	End Sub
