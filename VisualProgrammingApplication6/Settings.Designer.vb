@@ -40,47 +40,55 @@ Partial Class Settings
         'lblDiifficulty
         '
         Me.lblDiifficulty.AutoSize = True
-        Me.lblDiifficulty.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDiifficulty.Location = New System.Drawing.Point(12, 9)
+        Me.lblDiifficulty.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDiifficulty.Location = New System.Drawing.Point(16, 11)
+        Me.lblDiifficulty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDiifficulty.Name = "lblDiifficulty"
-        Me.lblDiifficulty.Size = New System.Drawing.Size(60, 16)
+        Me.lblDiifficulty.Size = New System.Drawing.Size(78, 19)
         Me.lblDiifficulty.TabIndex = 0
         Me.lblDiifficulty.Text = "Difficulty:"
         '
         'cboDifficulty
         '
         Me.cboDifficulty.DisplayMember = "Easy"
+        Me.cboDifficulty.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboDifficulty.FormattingEnabled = True
         Me.cboDifficulty.Items.AddRange(New Object() {"Easy", "Medium", "Hard", "Extreme"})
-        Me.cboDifficulty.Location = New System.Drawing.Point(105, 8)
+        Me.cboDifficulty.Location = New System.Drawing.Point(140, 10)
+        Me.cboDifficulty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboDifficulty.Name = "cboDifficulty"
-        Me.cboDifficulty.Size = New System.Drawing.Size(135, 21)
+        Me.cboDifficulty.Size = New System.Drawing.Size(179, 26)
         Me.cboDifficulty.TabIndex = 5
         '
         'cboQuestionSet
         '
+        Me.cboQuestionSet.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboQuestionSet.FormattingEnabled = True
         Me.cboQuestionSet.Items.AddRange(New Object() {"All", "History", "Science", "Pop Culture", "Custom"})
-        Me.cboQuestionSet.Location = New System.Drawing.Point(105, 40)
+        Me.cboQuestionSet.Location = New System.Drawing.Point(140, 49)
+        Me.cboQuestionSet.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboQuestionSet.Name = "cboQuestionSet"
-        Me.cboQuestionSet.Size = New System.Drawing.Size(135, 21)
+        Me.cboQuestionSet.Size = New System.Drawing.Size(179, 26)
         Me.cboQuestionSet.TabIndex = 6
         '
         'lblQuestionSet
         '
         Me.lblQuestionSet.AutoSize = True
-        Me.lblQuestionSet.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQuestionSet.Location = New System.Drawing.Point(12, 41)
+        Me.lblQuestionSet.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQuestionSet.Location = New System.Drawing.Point(16, 50)
+        Me.lblQuestionSet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblQuestionSet.Name = "lblQuestionSet"
-        Me.lblQuestionSet.Size = New System.Drawing.Size(87, 16)
+        Me.lblQuestionSet.Size = New System.Drawing.Size(103, 19)
         Me.lblQuestionSet.TabIndex = 7
         Me.lblQuestionSet.Text = "Question Set:"
         '
         'btnClearLeaderboard
         '
-        Me.btnClearLeaderboard.Location = New System.Drawing.Point(12, 183)
+        Me.btnClearLeaderboard.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearLeaderboard.Location = New System.Drawing.Point(16, 225)
+        Me.btnClearLeaderboard.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClearLeaderboard.Name = "btnClearLeaderboard"
-        Me.btnClearLeaderboard.Size = New System.Drawing.Size(105, 23)
+        Me.btnClearLeaderboard.Size = New System.Drawing.Size(140, 28)
         Me.btnClearLeaderboard.TabIndex = 8
         Me.btnClearLeaderboard.Text = "Clear Leaderboard"
         Me.btnClearLeaderboard.UseVisualStyleBackColor = True
@@ -88,35 +96,41 @@ Partial Class Settings
         'lblTimer
         '
         Me.lblTimer.AutoSize = True
-        Me.lblTimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTimer.Location = New System.Drawing.Point(12, 73)
+        Me.lblTimer.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTimer.Location = New System.Drawing.Point(16, 90)
+        Me.lblTimer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTimer.Name = "lblTimer"
-        Me.lblTimer.Size = New System.Drawing.Size(49, 16)
+        Me.lblTimer.Size = New System.Drawing.Size(58, 19)
         Me.lblTimer.TabIndex = 10
         Me.lblTimer.Text = "Timer: "
         '
         'numTimer
         '
-        Me.numTimer.Location = New System.Drawing.Point(105, 69)
+        Me.numTimer.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.numTimer.Location = New System.Drawing.Point(140, 85)
+        Me.numTimer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.numTimer.Name = "numTimer"
-        Me.numTimer.Size = New System.Drawing.Size(49, 20)
+        Me.numTimer.Size = New System.Drawing.Size(65, 23)
         Me.numTimer.TabIndex = 11
         '
         'lblSeconds
         '
         Me.lblSeconds.AutoSize = True
-        Me.lblSeconds.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSeconds.Location = New System.Drawing.Point(160, 73)
+        Me.lblSeconds.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSeconds.Location = New System.Drawing.Point(213, 90)
+        Me.lblSeconds.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSeconds.Name = "lblSeconds"
-        Me.lblSeconds.Size = New System.Drawing.Size(63, 16)
+        Me.lblSeconds.Size = New System.Drawing.Size(70, 19)
         Me.lblSeconds.TabIndex = 12
         Me.lblSeconds.Text = "seconds."
         '
         'btnClearCustomSets
         '
-        Me.btnClearCustomSets.Location = New System.Drawing.Point(12, 154)
+        Me.btnClearCustomSets.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearCustomSets.Location = New System.Drawing.Point(16, 190)
+        Me.btnClearCustomSets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClearCustomSets.Name = "btnClearCustomSets"
-        Me.btnClearCustomSets.Size = New System.Drawing.Size(105, 23)
+        Me.btnClearCustomSets.Size = New System.Drawing.Size(140, 28)
         Me.btnClearCustomSets.TabIndex = 13
         Me.btnClearCustomSets.Text = "Clear Custom Sets"
         Me.btnClearCustomSets.UseVisualStyleBackColor = True
@@ -124,36 +138,41 @@ Partial Class Settings
         'lblQuestionNum
         '
         Me.lblQuestionNum.AutoSize = True
-        Me.lblQuestionNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQuestionNum.Location = New System.Drawing.Point(12, 104)
+        Me.lblQuestionNum.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQuestionNum.Location = New System.Drawing.Point(16, 128)
+        Me.lblQuestionNum.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblQuestionNum.Name = "lblQuestionNum"
-        Me.lblQuestionNum.Size = New System.Drawing.Size(141, 16)
+        Me.lblQuestionNum.Size = New System.Drawing.Size(166, 19)
         Me.lblQuestionNum.TabIndex = 14
         Me.lblQuestionNum.Text = "Number Of Questions: "
         '
         'cboQuestionNum
         '
+        Me.cboQuestionNum.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboQuestionNum.FormattingEnabled = True
         Me.cboQuestionNum.Items.AddRange(New Object() {"15", "30", "45", "60", "80", "100"})
-        Me.cboQuestionNum.Location = New System.Drawing.Point(159, 104)
+        Me.cboQuestionNum.Location = New System.Drawing.Point(212, 128)
+        Me.cboQuestionNum.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboQuestionNum.Name = "cboQuestionNum"
-        Me.cboQuestionNum.Size = New System.Drawing.Size(135, 21)
+        Me.cboQuestionNum.Size = New System.Drawing.Size(179, 26)
         Me.cboQuestionNum.TabIndex = 15
         '
         'btnSaveChanges
         '
-        Me.btnSaveChanges.Location = New System.Drawing.Point(254, 174)
+        Me.btnSaveChanges.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSaveChanges.Location = New System.Drawing.Point(339, 214)
+        Me.btnSaveChanges.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSaveChanges.Name = "btnSaveChanges"
-        Me.btnSaveChanges.Size = New System.Drawing.Size(102, 32)
+        Me.btnSaveChanges.Size = New System.Drawing.Size(136, 39)
         Me.btnSaveChanges.TabIndex = 16
         Me.btnSaveChanges.Text = "Save Changes"
         Me.btnSaveChanges.UseVisualStyleBackColor = True
         '
         'Settings
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(368, 218)
+        Me.ClientSize = New System.Drawing.Size(491, 268)
         Me.Controls.Add(Me.btnSaveChanges)
         Me.Controls.Add(Me.cboQuestionNum)
         Me.Controls.Add(Me.lblQuestionNum)
@@ -166,6 +185,7 @@ Partial Class Settings
         Me.Controls.Add(Me.cboQuestionSet)
         Me.Controls.Add(Me.cboDifficulty)
         Me.Controls.Add(Me.lblDiifficulty)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Settings"
         Me.Text = "Settings"
         CType(Me.numTimer, System.ComponentModel.ISupportInitialize).EndInit()

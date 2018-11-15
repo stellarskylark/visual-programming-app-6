@@ -31,18 +31,22 @@ Partial Class About
         'lblAbout
         '
         Me.lblAbout.AutoSize = True
+        Me.lblAbout.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAbout.ForeColor = System.Drawing.Color.Black
         Me.lblAbout.Location = New System.Drawing.Point(27, 9)
         Me.lblAbout.Name = "lblAbout"
-        Me.lblAbout.Size = New System.Drawing.Size(49, 17)
+        Me.lblAbout.Size = New System.Drawing.Size(54, 19)
         Me.lblAbout.TabIndex = 0
         Me.lblAbout.Text = "About:"
         '
         'lblVersion
         '
         Me.lblVersion.AutoSize = True
+        Me.lblVersion.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVersion.ForeColor = System.Drawing.Color.Black
         Me.lblVersion.Location = New System.Drawing.Point(27, 37)
         Me.lblVersion.Name = "lblVersion"
-        Me.lblVersion.Size = New System.Drawing.Size(96, 17)
+        Me.lblVersion.Size = New System.Drawing.Size(106, 19)
         Me.lblVersion.TabIndex = 1
         Me.lblVersion.Text = "Version: 0.0.1"
         '
@@ -60,7 +64,7 @@ Partial Class About
         Me.Label1.BackColor = System.Drawing.SystemColors.Menu
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Lime
+        Me.Label1.ForeColor = System.Drawing.Color.ForestGreen
         Me.Label1.Location = New System.Drawing.Point(178, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(135, 62)
