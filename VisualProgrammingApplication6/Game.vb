@@ -82,21 +82,24 @@
 		End If
 
 		If Asked >= NumToAsk Then
-			Score.Show()
-			Me.Close()
+			QuitGame()
 		End If
 
 		LoadNewQuestion()
 	End Sub
 
-	Private Sub btnquit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-		MessageBox.Show("Your score is " + Score.ToString, "Goodbye")
+	Private Sub QuitGame()
+		Score.Show()
 		Me.Close()
+	End Sub
+
+	Private Sub btnquit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
+		QuitGame()
 	End Sub
 
 
 	Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-		lblScore.Text = "$" + Score.ToString
+		lblScore.Text = "$" + Correct.ToString
 
 		Me.Questions = Title.Questions
 		If NumToAsk < Questions.Count Then ' Sanity check
