@@ -30,8 +30,15 @@
             questionSet = "All"
         End If
 
-
-        timerStartNum = numTimer 'sets game timer to selected value
+        If gameDifficulty = 2 Then 'Based on the game Difficulty, it sets the timer
+            timerStartNum = 60
+        ElseIf Me.gameDifficulty = 3 Then
+            timerStartNum = 30
+        ElseIf Me.gameDifficulty = 4 Then
+            timerStartNum = 20
+        Else
+            timerStartNum = 150
+        End If
 
 
         If Me.cboQuestionNum.Text = 15 Then

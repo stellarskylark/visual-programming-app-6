@@ -165,7 +165,4 @@
 		lblTimer.Text = displayMinute & ":" & displaySecond
 	End Sub
 
-	Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-		decrement()
-	End Sub
 End Class
