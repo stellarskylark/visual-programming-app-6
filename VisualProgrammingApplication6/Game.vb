@@ -5,54 +5,63 @@
 
 	Dim minutes As Integer
 	Dim seconds As Integer
-	Dim TotalMinutes As Integer = 0
-	Dim TotalSeconds As Integer = 45
+    'Dim TotalMinutes As Integer = 0
+    Dim TotalSeconds As Integer = 150
 
-	Dim CorrectAnswer = 1
+    Dim CorrectAnswer = 1
 	Dim CorrectAnswerText As String
 
 	Dim Questions As List(Of Question)
 
-	Private Sub LoadNewQuestion()
-		' Get random question
-		Dim rnd = New Random()
-		Dim Question = Questions(
-							rnd.Next(0, Title.Questions.Count - 1))
-		Questions.Remove(Question) ' To prevent duplication
+    Private Sub LoadNewQuestion()
+        ' Get random question
+        Dim rnd = New Random()
+        Dim Question = Questions(
+                            rnd.Next(0, Title.Questions.Count - 1))
+        Questions.Remove(Question) ' To prevent duplication
 
-		CorrectAnswerText = Question.Correct
-		lblQuestion.Text = Question.Prompt
-		CorrectAnswer = rnd.Next(1, 5)
+        CorrectAnswerText = Question.Correct
+        lblQuestion.Text = Question.Prompt
+        CorrectAnswer = rnd.Next(1, 5)
 
-		Select Case CorrectAnswer
-			Case 1
-				btnAnswer1.Text = Question.Correct
-				btnAnswer2.Text = Question.Wrong1
-				btnAnswer3.Text = Question.Wrong2
-				btnAnswer4.Text = Question.Wrong3
-			Case 2
-				btnAnswer2.Text = Question.Correct
-				btnAnswer1.Text = Question.Wrong1
-				btnAnswer3.Text = Question.Wrong2
-				btnAnswer4.Text = Question.Wrong3
-			Case 3
-				btnAnswer3.Text = Question.Correct
-				btnAnswer2.Text = Question.Wrong1
-				btnAnswer1.Text = Question.Wrong2
-				btnAnswer4.Text = Question.Wrong3
-			Case 4
-				btnAnswer4.Text = Question.Correct
-				btnAnswer2.Text = Question.Wrong1
-				btnAnswer3.Text = Question.Wrong2
-				btnAnswer1.Text = Question.Wrong3
-		End Select
+        Select Case CorrectAnswer
+            Case 1
+                btnAnswer1.Text = Question.Correct
+                btnAnswer2.Text = Question.Wrong1
+                btnAnswer3.Text = Question.Wrong2
+                btnAnswer4.Text = Question.Wrong3
+            Case 2
+                btnAnswer2.Text = Question.Correct
+                btnAnswer1.Text = Question.Wrong1
+                btnAnswer3.Text = Question.Wrong2
+                btnAnswer4.Text = Question.Wrong3
+            Case 3
+                btnAnswer3.Text = Question.Correct
+                btnAnswer2.Text = Question.Wrong1
+                btnAnswer1.Text = Question.Wrong2
+                btnAnswer4.Text = Question.Wrong3
+            Case 4
+                btnAnswer4.Text = Question.Correct
+                btnAnswer2.Text = Question.Wrong1
+                btnAnswer3.Text = Question.Wrong2
+                btnAnswer1.Text = Question.Wrong3
+        End Select
 
-		minutes = TotalMinutes
-		seconds = TotalSeconds
+        'minutes = TotalMinutes
+        fixTime()
+        seconds = TotalSeconds
 
-	End Sub
+    End Sub
 
-	Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+    Sub fixTime()
+        If TotalSeconds > 59 Then
+            TotalSeconds -= 60
+            minutes += 1
+            fixTime()
+        End If
+    End Sub
+
+    Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
 		Dim Answer = 0
 
 		If btnAnswer1.Checked Then
@@ -118,11 +127,12 @@
 			minutes = minutes - 1
 			seconds = 59
 		End If
-		If minutes < 0 Then
-			minutes = TotalMinutes
-			seconds = 0
-		End If
-		displayTimer()
+        If minutes < 0 Then
+            'If an answer is not chosen before time runs out, load new question
+            Asked += 1
+            LoadNewQuestion()
+        End If
+        displayTimer()
 	End Sub
 
 	Sub displayTimer()
