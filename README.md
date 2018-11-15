@@ -25,9 +25,9 @@ git remote add upstream https://github.com/astroengisci/visual-programming-app-6
 ```
 
 Also, if you cloned from this repo instead of from your fork, you will need to point `origin` to 
-your fork. To do this, go to Repository > Repository Settings, and in the Remote tab paste in the
-URL for *your* fork (or just change astroengisci to your username). If you haven't actually made
-a fork yet, click the Fork button in the top right of this repo.
+your fork. To do this, go to Repository > Repository Settings, and in the Remote tab change 
+`astroengisci` to your username. If you haven't actually made a fork yet, click the Fork button 
+in the top right of this repo.
 
 If you have merge conflicts, you will need to resolve those by committing the merge and then 
 manually adjusting the files. Visual Studio will help you here by not compiling until you have
