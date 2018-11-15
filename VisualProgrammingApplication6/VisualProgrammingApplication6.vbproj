@@ -91,6 +91,7 @@
     <Compile Include="Custom.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Question.vb" />
     <Compile Include="Score.Designer.vb">
       <DependentUpon>Score.vb</DependentUpon>
     </Compile>
