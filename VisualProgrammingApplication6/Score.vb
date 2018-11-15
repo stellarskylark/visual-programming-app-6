@@ -4,9 +4,9 @@
 
         Title.Show()
 
-        Me.Hide()
+		Me.Close()
 
-    End Function
+	End Function
 
     Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         MainMenu()
