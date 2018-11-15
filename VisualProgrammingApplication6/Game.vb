@@ -6,7 +6,7 @@
 	Dim minutes As Integer
 	Dim seconds As Integer
 	Dim TotalMinutes As Integer = 0
-	Dim TotalSeconds As Integer = 10
+	Dim TotalSeconds As Integer = 45
 
 	Dim CorrectAnswer = 1
 	Dim CorrectAnswerText As String
