@@ -22,251 +22,235 @@ Partial Class Game
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnquit = New System.Windows.Forms.Button()
-        Me.lblScore = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btnanswer3 = New System.Windows.Forms.RadioButton()
-        Me.btnanswer1 = New System.Windows.Forms.RadioButton()
-        Me.btnanswer4 = New System.Windows.Forms.RadioButton()
-        Me.btnanswer2 = New System.Windows.Forms.RadioButton()
-        Me.btnconfirm = New System.Windows.Forms.Button()
-        Me.lblquestion = New System.Windows.Forms.Label()
-        Me.btnhelp4 = New System.Windows.Forms.Button()
-        Me.btnhelp3 = New System.Windows.Forms.Button()
-        Me.btnhelp2 = New System.Windows.Forms.Button()
-        Me.btnhelp1 = New System.Windows.Forms.Button()
-        Me.lblTimer = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.GroupBox2.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(92, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 17)
-        Me.Label1.TabIndex = 47
-        Me.Label1.Text = "Millionaire Game"
-        '
-        'btnquit
-        '
-        Me.btnquit.Location = New System.Drawing.Point(323, 507)
-        Me.btnquit.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnquit.Name = "btnquit"
-        Me.btnquit.Size = New System.Drawing.Size(100, 28)
-        Me.btnquit.TabIndex = 46
-        Me.btnquit.Text = "Quit"
-        Me.btnquit.UseVisualStyleBackColor = True
-        '
-        'lblScore
-        '
-        Me.lblScore.AutoSize = True
-        Me.lblScore.Location = New System.Drawing.Point(491, 68)
-        Me.lblScore.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblScore.Name = "lblScore"
-        Me.lblScore.Size = New System.Drawing.Size(0, 17)
-        Me.lblScore.TabIndex = 38
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.btnanswer3)
-        Me.GroupBox2.Controls.Add(Me.btnanswer1)
-        Me.GroupBox2.Controls.Add(Me.btnanswer4)
-        Me.GroupBox2.Controls.Add(Me.btnanswer2)
-        Me.GroupBox2.Location = New System.Drawing.Point(51, 326)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox2.Size = New System.Drawing.Size(789, 145)
-        Me.GroupBox2.TabIndex = 41
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
-        '
-        'btnanswer3
-        '
-        Me.btnanswer3.AutoSize = True
-        Me.btnanswer3.Location = New System.Drawing.Point(444, 39)
-        Me.btnanswer3.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnanswer3.Name = "btnanswer3"
-        Me.btnanswer3.Size = New System.Drawing.Size(61, 21)
-        Me.btnanswer3.TabIndex = 19
-        Me.btnanswer3.TabStop = True
-        Me.btnanswer3.Text = "Pluto"
-        Me.btnanswer3.UseVisualStyleBackColor = True
-        '
-        'btnanswer1
-        '
-        Me.btnanswer1.AutoSize = True
-        Me.btnanswer1.Location = New System.Drawing.Point(8, 39)
-        Me.btnanswer1.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnanswer1.Name = "btnanswer1"
-        Me.btnanswer1.Size = New System.Drawing.Size(80, 21)
-        Me.btnanswer1.TabIndex = 17
-        Me.btnanswer1.TabStop = True
-        Me.btnanswer1.Text = "Mercury"
-        Me.btnanswer1.UseVisualStyleBackColor = True
-        '
-        'btnanswer4
-        '
-        Me.btnanswer4.AutoSize = True
-        Me.btnanswer4.Location = New System.Drawing.Point(444, 82)
-        Me.btnanswer4.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnanswer4.Name = "btnanswer4"
-        Me.btnanswer4.Size = New System.Drawing.Size(71, 21)
-        Me.btnanswer4.TabIndex = 20
-        Me.btnanswer4.TabStop = True
-        Me.btnanswer4.Text = "Saturn"
-        Me.btnanswer4.UseVisualStyleBackColor = True
-        '
-        'btnanswer2
-        '
-        Me.btnanswer2.AutoSize = True
-        Me.btnanswer2.Location = New System.Drawing.Point(8, 82)
-        Me.btnanswer2.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnanswer2.Name = "btnanswer2"
-        Me.btnanswer2.Size = New System.Drawing.Size(69, 21)
-        Me.btnanswer2.TabIndex = 18
-        Me.btnanswer2.TabStop = True
-        Me.btnanswer2.Text = "Venus"
-        Me.btnanswer2.UseVisualStyleBackColor = True
-        '
-        'btnconfirm
-        '
-        Me.btnconfirm.Location = New System.Drawing.Point(191, 507)
-        Me.btnconfirm.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnconfirm.Name = "btnconfirm"
-        Me.btnconfirm.Size = New System.Drawing.Size(100, 28)
-        Me.btnconfirm.TabIndex = 45
-        Me.btnconfirm.Text = "Confirm"
-        Me.btnconfirm.UseVisualStyleBackColor = True
-        '
-        'lblquestion
-        '
-        Me.lblquestion.BackColor = System.Drawing.Color.White
-        Me.lblquestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblquestion.ForeColor = System.Drawing.Color.DarkBlue
-        Me.lblquestion.Location = New System.Drawing.Point(51, 118)
-        Me.lblquestion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblquestion.Name = "lblquestion"
-        Me.lblquestion.Size = New System.Drawing.Size(966, 123)
-        Me.lblquestion.TabIndex = 44
-        Me.lblquestion.Text = "Which planet is closest to the Sun?"
-        '
-        'btnhelp4
-        '
-        Me.btnhelp4.BackColor = System.Drawing.Color.Blue
-        Me.btnhelp4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnhelp4.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnhelp4.ForeColor = System.Drawing.Color.Yellow
-        Me.btnhelp4.Location = New System.Drawing.Point(824, 267)
-        Me.btnhelp4.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnhelp4.Name = "btnhelp4"
-        Me.btnhelp4.Size = New System.Drawing.Size(193, 52)
-        Me.btnhelp4.TabIndex = 43
-        Me.btnhelp4.Text = "Add Time"
-        Me.btnhelp4.UseVisualStyleBackColor = False
-        '
-        'btnhelp3
-        '
-        Me.btnhelp3.BackColor = System.Drawing.Color.Blue
-        Me.btnhelp3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnhelp3.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnhelp3.ForeColor = System.Drawing.Color.Yellow
-        Me.btnhelp3.Location = New System.Drawing.Point(563, 267)
-        Me.btnhelp3.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnhelp3.Name = "btnhelp3"
-        Me.btnhelp3.Size = New System.Drawing.Size(224, 52)
-        Me.btnhelp3.TabIndex = 42
-        Me.btnhelp3.Text = "Stop Time"
-        Me.btnhelp3.UseVisualStyleBackColor = False
-        '
-        'btnhelp2
-        '
-        Me.btnhelp2.BackColor = System.Drawing.Color.Blue
-        Me.btnhelp2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnhelp2.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnhelp2.ForeColor = System.Drawing.Color.Yellow
-        Me.btnhelp2.Location = New System.Drawing.Point(308, 267)
-        Me.btnhelp2.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnhelp2.Name = "btnhelp2"
-        Me.btnhelp2.Size = New System.Drawing.Size(213, 52)
-        Me.btnhelp2.TabIndex = 40
-        Me.btnhelp2.Text = "50/50"
-        Me.btnhelp2.UseVisualStyleBackColor = False
-        '
-        'btnhelp1
-        '
-        Me.btnhelp1.BackColor = System.Drawing.Color.Blue
-        Me.btnhelp1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnhelp1.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnhelp1.ForeColor = System.Drawing.Color.Yellow
-        Me.btnhelp1.Location = New System.Drawing.Point(51, 267)
-        Me.btnhelp1.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnhelp1.Name = "btnhelp1"
-        Me.btnhelp1.Size = New System.Drawing.Size(224, 52)
-        Me.btnhelp1.TabIndex = 39
-        Me.btnhelp1.Text = "Show Answer"
-        Me.btnhelp1.UseVisualStyleBackColor = False
-        '
-        'lblTimer
-        '
-        Me.lblTimer.AutoSize = True
-        Me.lblTimer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTimer.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTimer.Location = New System.Drawing.Point(519, 68)
-        Me.lblTimer.Name = "lblTimer"
-        Me.lblTimer.Size = New System.Drawing.Size(2, 43)
-        Me.lblTimer.TabIndex = 48
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'Game
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
-        Me.Controls.Add(Me.lblTimer)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnquit)
-        Me.Controls.Add(Me.lblScore)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.btnconfirm)
-        Me.Controls.Add(Me.lblquestion)
-        Me.Controls.Add(Me.btnhelp4)
-        Me.Controls.Add(Me.btnhelp3)
-        Me.Controls.Add(Me.btnhelp2)
-        Me.Controls.Add(Me.btnhelp1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Game"
-        Me.Text = "Form4"
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+		Me.components = New System.ComponentModel.Container()
+		Me.lblTitle = New System.Windows.Forms.Label()
+		Me.btnQuit = New System.Windows.Forms.Button()
+		Me.lblScore = New System.Windows.Forms.Label()
+		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+		Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
+		Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
+		Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
+		Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
+		Me.btnConfirm = New System.Windows.Forms.Button()
+		Me.lblQuestion = New System.Windows.Forms.Label()
+		Me.btnHelpAdd = New System.Windows.Forms.Button()
+		Me.btnHelpStop = New System.Windows.Forms.Button()
+		Me.btnHelp50 = New System.Windows.Forms.Button()
+		Me.btnHelpShow = New System.Windows.Forms.Button()
+		Me.lblTimer = New System.Windows.Forms.Label()
+		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+		Me.GroupBox2.SuspendLayout()
+		Me.SuspendLayout()
+		'
+		'lblTitle
+		'
+		Me.lblTitle.AutoSize = True
+		Me.lblTitle.Location = New System.Drawing.Point(69, 15)
+		Me.lblTitle.Name = "lblTitle"
+		Me.lblTitle.Size = New System.Drawing.Size(84, 13)
+		Me.lblTitle.TabIndex = 47
+		Me.lblTitle.Text = "Millionaire Game"
+		'
+		'btnQuit
+		'
+		Me.btnQuit.Location = New System.Drawing.Point(242, 412)
+		Me.btnQuit.Name = "btnQuit"
+		Me.btnQuit.Size = New System.Drawing.Size(75, 23)
+		Me.btnQuit.TabIndex = 46
+		Me.btnQuit.Text = "Quit"
+		Me.btnQuit.UseVisualStyleBackColor = True
+		'
+		'lblScore
+		'
+		Me.lblScore.AutoSize = True
+		Me.lblScore.Location = New System.Drawing.Point(368, 55)
+		Me.lblScore.Name = "lblScore"
+		Me.lblScore.Size = New System.Drawing.Size(0, 13)
+		Me.lblScore.TabIndex = 38
+		'
+		'GroupBox2
+		'
+		Me.GroupBox2.Controls.Add(Me.btnAnswer3)
+		Me.GroupBox2.Controls.Add(Me.btnAnswer1)
+		Me.GroupBox2.Controls.Add(Me.btnAnswer4)
+		Me.GroupBox2.Controls.Add(Me.btnAnswer2)
+		Me.GroupBox2.Location = New System.Drawing.Point(38, 265)
+		Me.GroupBox2.Name = "GroupBox2"
+		Me.GroupBox2.Size = New System.Drawing.Size(592, 118)
+		Me.GroupBox2.TabIndex = 41
+		Me.GroupBox2.TabStop = False
+		'
+		'btnAnswer3
+		'
+		Me.btnAnswer3.AutoSize = True
+		Me.btnAnswer3.Location = New System.Drawing.Point(333, 32)
+		Me.btnAnswer3.Name = "btnAnswer3"
+		Me.btnAnswer3.Size = New System.Drawing.Size(49, 17)
+		Me.btnAnswer3.TabIndex = 19
+		Me.btnAnswer3.TabStop = True
+		Me.btnAnswer3.Text = "Pluto"
+		Me.btnAnswer3.UseVisualStyleBackColor = True
+		'
+		'btnAnswer1
+		'
+		Me.btnAnswer1.AutoSize = True
+		Me.btnAnswer1.Location = New System.Drawing.Point(6, 32)
+		Me.btnAnswer1.Name = "btnAnswer1"
+		Me.btnAnswer1.Size = New System.Drawing.Size(63, 17)
+		Me.btnAnswer1.TabIndex = 17
+		Me.btnAnswer1.TabStop = True
+		Me.btnAnswer1.Text = "Mercury"
+		Me.btnAnswer1.UseVisualStyleBackColor = True
+		'
+		'btnAnswer4
+		'
+		Me.btnAnswer4.AutoSize = True
+		Me.btnAnswer4.Location = New System.Drawing.Point(333, 67)
+		Me.btnAnswer4.Name = "btnAnswer4"
+		Me.btnAnswer4.Size = New System.Drawing.Size(56, 17)
+		Me.btnAnswer4.TabIndex = 20
+		Me.btnAnswer4.TabStop = True
+		Me.btnAnswer4.Text = "Saturn"
+		Me.btnAnswer4.UseVisualStyleBackColor = True
+		'
+		'btnAnswer2
+		'
+		Me.btnAnswer2.AutoSize = True
+		Me.btnAnswer2.Location = New System.Drawing.Point(6, 67)
+		Me.btnAnswer2.Name = "btnAnswer2"
+		Me.btnAnswer2.Size = New System.Drawing.Size(55, 17)
+		Me.btnAnswer2.TabIndex = 18
+		Me.btnAnswer2.TabStop = True
+		Me.btnAnswer2.Text = "Venus"
+		Me.btnAnswer2.UseVisualStyleBackColor = True
+		'
+		'btnConfirm
+		'
+		Me.btnConfirm.Location = New System.Drawing.Point(143, 412)
+		Me.btnConfirm.Name = "btnConfirm"
+		Me.btnConfirm.Size = New System.Drawing.Size(75, 23)
+		Me.btnConfirm.TabIndex = 45
+		Me.btnConfirm.Text = "Confirm"
+		Me.btnConfirm.UseVisualStyleBackColor = True
+		'
+		'lblQuestion
+		'
+		Me.lblQuestion.BackColor = System.Drawing.Color.White
+		Me.lblQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.lblQuestion.ForeColor = System.Drawing.Color.DarkBlue
+		Me.lblQuestion.Location = New System.Drawing.Point(38, 96)
+		Me.lblQuestion.Name = "lblQuestion"
+		Me.lblQuestion.Size = New System.Drawing.Size(725, 100)
+		Me.lblQuestion.TabIndex = 44
+		Me.lblQuestion.Text = "Which planet is closest to the Sun?"
+		'
+		'btnHelpAdd
+		'
+		Me.btnHelpAdd.BackColor = System.Drawing.Color.Blue
+		Me.btnHelpAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnHelpAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.btnHelpAdd.ForeColor = System.Drawing.Color.Yellow
+		Me.btnHelpAdd.Location = New System.Drawing.Point(618, 217)
+		Me.btnHelpAdd.Name = "btnHelpAdd"
+		Me.btnHelpAdd.Size = New System.Drawing.Size(145, 42)
+		Me.btnHelpAdd.TabIndex = 43
+		Me.btnHelpAdd.Text = "Add Time"
+		Me.btnHelpAdd.UseVisualStyleBackColor = False
+		'
+		'btnHelpStop
+		'
+		Me.btnHelpStop.BackColor = System.Drawing.Color.Blue
+		Me.btnHelpStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnHelpStop.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.btnHelpStop.ForeColor = System.Drawing.Color.Yellow
+		Me.btnHelpStop.Location = New System.Drawing.Point(422, 217)
+		Me.btnHelpStop.Name = "btnHelpStop"
+		Me.btnHelpStop.Size = New System.Drawing.Size(168, 42)
+		Me.btnHelpStop.TabIndex = 42
+		Me.btnHelpStop.Text = "Stop Time"
+		Me.btnHelpStop.UseVisualStyleBackColor = False
+		'
+		'btnHelp50
+		'
+		Me.btnHelp50.BackColor = System.Drawing.Color.Blue
+		Me.btnHelp50.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnHelp50.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.btnHelp50.ForeColor = System.Drawing.Color.Yellow
+		Me.btnHelp50.Location = New System.Drawing.Point(231, 217)
+		Me.btnHelp50.Name = "btnHelp50"
+		Me.btnHelp50.Size = New System.Drawing.Size(160, 42)
+		Me.btnHelp50.TabIndex = 40
+		Me.btnHelp50.Text = "50/50"
+		Me.btnHelp50.UseVisualStyleBackColor = False
+		'
+		'btnHelpShow
+		'
+		Me.btnHelpShow.BackColor = System.Drawing.Color.Blue
+		Me.btnHelpShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnHelpShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.btnHelpShow.ForeColor = System.Drawing.Color.Yellow
+		Me.btnHelpShow.Location = New System.Drawing.Point(38, 217)
+		Me.btnHelpShow.Name = "btnHelpShow"
+		Me.btnHelpShow.Size = New System.Drawing.Size(168, 42)
+		Me.btnHelpShow.TabIndex = 39
+		Me.btnHelpShow.Text = "Show Answer"
+		Me.btnHelpShow.UseVisualStyleBackColor = False
+		'
+		'lblTimer
+		'
+		Me.lblTimer.AutoSize = True
+		Me.lblTimer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.lblTimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.lblTimer.Location = New System.Drawing.Point(389, 55)
+		Me.lblTimer.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+		Me.lblTimer.Name = "lblTimer"
+		Me.lblTimer.Size = New System.Drawing.Size(2, 39)
+		Me.lblTimer.TabIndex = 48
+		'
+		'Timer1
+		'
+		Me.Timer1.Enabled = True
+		Me.Timer1.Interval = 1000
+		'
+		'Game
+		'
+		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.ClientSize = New System.Drawing.Size(800, 450)
+		Me.Controls.Add(Me.lblTimer)
+		Me.Controls.Add(Me.lblTitle)
+		Me.Controls.Add(Me.btnQuit)
+		Me.Controls.Add(Me.lblScore)
+		Me.Controls.Add(Me.GroupBox2)
+		Me.Controls.Add(Me.btnConfirm)
+		Me.Controls.Add(Me.lblQuestion)
+		Me.Controls.Add(Me.btnHelpAdd)
+		Me.Controls.Add(Me.btnHelpStop)
+		Me.Controls.Add(Me.btnHelp50)
+		Me.Controls.Add(Me.btnHelpShow)
+		Me.Name = "Game"
+		Me.Text = "Who Wants to Be a Millionaire?"
+		Me.GroupBox2.ResumeLayout(False)
+		Me.GroupBox2.PerformLayout()
+		Me.ResumeLayout(False)
+		Me.PerformLayout()
 
-    End Sub
+	End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents btnquit As Button
-    Friend WithEvents lblScore As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents btnanswer3 As RadioButton
-    Friend WithEvents btnanswer1 As RadioButton
-    Friend WithEvents btnanswer4 As RadioButton
-    Friend WithEvents btnanswer2 As RadioButton
-    Friend WithEvents btnconfirm As Button
-    Friend WithEvents lblquestion As Label
-    Friend WithEvents btnhelp4 As Button
-    Friend WithEvents btnhelp3 As Button
-    Friend WithEvents btnhelp2 As Button
-    Friend WithEvents btnhelp1 As Button
-    Friend WithEvents lblTimer As Label
+	Friend WithEvents lblTitle As Label
+	Friend WithEvents btnQuit As Button
+	Friend WithEvents lblScore As Label
+	Friend WithEvents GroupBox2 As GroupBox
+	Friend WithEvents btnAnswer3 As RadioButton
+	Friend WithEvents btnAnswer1 As RadioButton
+	Friend WithEvents btnAnswer4 As RadioButton
+	Friend WithEvents btnAnswer2 As RadioButton
+	Friend WithEvents btnConfirm As Button
+	Friend WithEvents lblQuestion As Label
+	Friend WithEvents btnHelpAdd As Button
+	Friend WithEvents btnHelpStop As Button
+	Friend WithEvents btnHelp50 As Button
+	Friend WithEvents btnHelpShow As Button
+	Friend WithEvents lblTimer As Label
     Friend WithEvents Timer1 As Timer
 End Class
