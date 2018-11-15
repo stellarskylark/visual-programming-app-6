@@ -24,6 +24,29 @@ If it tells you that `upstream` does not exist, run
 git remote add upstream https://github.com/astroengisci/visual-programming-app-6.git
 ```
 
+Also, if you cloned from this repo instead of from your fork, you will need to point `origin` to 
+your fork. To do this, go to Repository > Repository Settings, and in the Remote tab paste in the
+URL for *your* fork (or just change astroengisci to your username). If you haven't actually made
+a fork yet, click the Fork button in the top right of this repo.
+
 If you have merge conflicts, you will need to resolve those by committing the merge and then 
 manually adjusting the files. Visual Studio will help you here by not compiling until you have
 successfully resolved the conflicts.
+
+The conflict will look something like this:
+
+```
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> master
+```
+
+Here, the space above the `=======` is the state of the file from the primary repo, HEAD, and 
+everything below is the state of the file in `master` (your local copy). Decide which parts 
+need to stay and which need to be removed, and delete the conflict markers.
+
+Note that if the merge conflict is in your `.vbproj` or `.sln` file, you will have to resolve 
+them with a text editor before you can open the project in Visual Studio.
