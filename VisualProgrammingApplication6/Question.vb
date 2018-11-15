@@ -1,4 +1,5 @@
 ﻿Public Class Question
+	Implements ICloneable
 	Public Prompt As String
 	Public Correct As String
 	Public Wrong1 As String
@@ -14,4 +15,8 @@
 		Me.Wrong2 = wrong2
 		Me.Wrong3 = wrong3
 	End Sub
+
+	Public Function Clone() As Object Implements ICloneable.Clone
+		Return New Question(Me.Prompt, Me.Correct, Me.Wrong1, Me.Wrong2, Me.Wrong3)
+	End Function
 End Class
