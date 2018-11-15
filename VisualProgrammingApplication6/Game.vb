@@ -5,15 +5,25 @@
 
 	Dim minutes As Integer
 	Dim seconds As Integer
-	Dim TotalMinutes As Integer = 0
-	Dim TotalSeconds As Integer = 45
+    'Dim TotalMinutes As Integer = 0
+    Dim TotalSeconds As Integer = 150
 
-	Dim CorrectAnswer = 1
+    Dim CorrectAnswer = 1
 	Dim CorrectAnswerText As String
 
-	Dim Questions As List(Of Question)
+    Dim Questions As List(Of Question)
 
-	Private Sub LoadNewQuestion()
+    Sub fixTime()
+        If TotalSeconds > 59 Then
+            TotalSeconds -= 60
+            minutes += 1
+            fixTime()
+        End If
+    End Sub
+
+    'Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
+
+    Private Sub LoadNewQuestion()
 		' Get random question
 		Dim rnd = New Random()
 		If Questions.Count = 0 Then ' Sanity check
@@ -52,79 +62,89 @@
 				btnAnswer1.Text = Question.Wrong3
 		End Select
 
-		minutes = TotalMinutes
-		seconds = TotalSeconds
+        'minutes = TotalMinutes
+        fixTime()
+        seconds = TotalSeconds
 
 	End Sub
 
 	Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
-		Dim Answer = 0
 
-		If btnAnswer1.Checked Then
-			Answer = 1
-		ElseIf btnAnswer2.Checked Then
-			Answer = 2
-		ElseIf btnAnswer3.Checked Then
-			Answer = 3
-		ElseIf btnAnswer4.Checked Then
-			Answer = 4
-		End If
+        Dim Answer = 0
 
-		'No answers were checked
-		If Answer = 0 Then
-			MessageBox.Show("Please select an answer")
-			Return
-		End If
+        If btnAnswer1.Checked Then
+            Answer = 1
+        ElseIf btnAnswer2.Checked Then
+            Answer = 2
+        ElseIf btnAnswer3.Checked Then
+            Answer = 3
+        ElseIf btnAnswer4.Checked Then
+            Answer = 4
+        End If
 
-		If Answer = CorrectAnswer Then
-			MessageBox.Show("Correct!")
-			Correct += 1
-			Asked += 1
-		Else
-			MessageBox.Show("Sorry, the correct answer was" & vbCrLf & CorrectAnswerText,
-							"Incorrect")
-			Asked += 1
-		End If
+        'No answers were checked
+        If Answer = 0 Then
+            MessageBox.Show("Please select an answer")
+            Return
+        End If
 
-		If Asked >= NumToAsk Then
-			QuitGame()
-		End If
+        If Answer = CorrectAnswer Then
+            MessageBox.Show("Correct!")
+            Correct += 1
+            Asked += 1
+        Else
+            MessageBox.Show("Sorry, the correct answer was" & vbCrLf & CorrectAnswerText,
+                            "Incorrect")
+            Asked += 1
+        End If
 
-		LoadNewQuestion()
-		lblScore.Text = "$" + Correct.ToString
-	End Sub
+        If Asked >= NumToAsk Then
+            QuitGame()
+        End If
 
-	Private Sub QuitGame()
-		Score.Show()
-		Me.Close()
-	End Sub
+        LoadNewQuestion()
+        lblScore.Text = "$" + Correct.ToString
+    End Sub
 
-	Private Sub btnquit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-		QuitGame()
-	End Sub
+    Private Sub QuitGame()
+        Score.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnquit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
+        QuitGame()
+    End Sub
 
 
-	Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-		lblScore.Text = "$0"
+    Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblScore.Text = "$0"
 
-		Me.Questions = Title.Questions
-		If NumToAsk < Questions.Count Then ' Sanity check
-			NumToAsk = Questions.Count
-		End If
-		LoadNewQuestion()
+        Me.Questions = Title.Questions
+        If NumToAsk < Questions.Count Then ' Sanity check
+            NumToAsk = Questions.Count
+        End If
+        LoadNewQuestion()
 
-		displayTimer()
-		Timer1.Enabled = True
-		Timer1.Interval = 1000
-	End Sub
+        displayTimer()
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+    End Sub
 
-	Sub decrement()
-		seconds = seconds - 1
-		If seconds < 0 Then
-			minutes = minutes - 1
-			seconds = 59
-		End If
-		If minutes < 0 Then
+    Sub decrement()
+        seconds = seconds - 1
+        If seconds < 0 Then
+            minutes = minutes - 1
+            seconds = 59
+        End If
+
+        If minutes < 0 Then
+            'If an answer is not chosen before time runs out, load new question
+            Asked += 1
+            LoadNewQuestion()
+        End If
+        displayTimer()
+
+        If minutes < 0 Then
 			Asked += 1
 			If Asked >= NumToAsk Then
 				QuitGame()
@@ -132,9 +152,10 @@
 			LoadNewQuestion()
 		End If
 		displayTimer()
-	End Sub
 
-	Sub displayTimer()
+    End Sub
+
+    Sub displayTimer()
 		Dim displaySecond As String
 		Dim displayMinute As String
 		displaySecond = seconds

@@ -19,11 +19,40 @@
 		Custom.Show()
 	End Sub
 
-	Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
-		Game.Show()
-	End Sub
+    Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
+        Game.Show()
+    End Sub
 
-	Private Sub Title_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        changeColorTitle()
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        changeColorMoney()
+    End Sub
+
+    Sub changeColorTitle()
+        If lblTitle.ForeColor = Color.Gold Then
+            lblTitle.ForeColor = Color.ForestGreen
+        Else lblTitle.ForeColor = Color.Gold
+
+        End If
+    End Sub
+
+    Sub changeColorMoney()
+        If lblDollar1.ForeColor = Color.Gold Then
+            lblDollar1.ForeColor = Color.ForestGreen
+        Else lblDollar1.ForeColor = Color.Gold
+
+        End If
+        If lblDollar2.ForeColor = Color.Gold Then
+            lblDollar2.ForeColor = Color.ForestGreen
+        Else lblDollar2.ForeColor = Color.Gold
+
+        End If
+    End Sub
+
+    Private Sub Title_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 		' Initialize default questions
 		Questions = New List(Of Question)
 
@@ -53,4 +82,6 @@
 									"Donald Trump",
 									"John Adams"))
 	End Sub
+
+
 End Class
