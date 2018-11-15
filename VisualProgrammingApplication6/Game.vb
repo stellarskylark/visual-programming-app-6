@@ -10,9 +10,6 @@
 			MessageBox.Show("Incorrect", "Sorry")
 		End If
 
-		Me.Hide()
-		'Form5.Show()
-
 
 	End Sub
 
