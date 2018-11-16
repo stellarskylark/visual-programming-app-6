@@ -16,9 +16,16 @@
     Dim CorrectAnswer = 1
 	Dim CorrectAnswerText As String
 
-    Dim Questions As List(Of Question)
+	Dim Questions As List(Of Question) = New List(Of Question)
 
-    Sub fixTime()
+	Private Sub CloneQuestionsList()
+		For Each q In Title.Questions
+			Questions.Add(q.Clone())
+		Next
+
+	End Sub
+
+	Sub fixTime()
         If TotalSeconds > 59 Then
             TotalSeconds -= 60
             minutes += 1
@@ -32,11 +39,11 @@
 		' Get random question
 		Dim rnd = New Random()
 		If Questions.Count = 0 Then ' Sanity check
-			Questions = Title.Questions
+			CloneQuestionsList()
 		End If
 
 		Dim Question = Questions(
-							rnd.Next(0, Title.Questions.Count - 1))
+							rnd.Next(0, Questions.Count - 1))
 
 		Questions.Remove(Question) ' To prevent duplication
 
@@ -129,8 +136,8 @@
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblScore.Text = "$0"
 
-        Me.Questions = Title.Questions
-        If NumToAsk < Questions.Count Then ' Sanity check
+		CloneQuestionsList()
+		If NumToAsk < Questions.Count Then ' Sanity check
             NumToAsk = Questions.Count
         End If
         LoadNewQuestion()
