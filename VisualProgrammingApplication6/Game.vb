@@ -222,27 +222,27 @@
         End If
     End Sub
 
-    Private Sub btnHelpShow_Click(sender As Object, e As EventArgs) Handles btnHelpShow.Click
-        If helpCorrectClicked = 0 Then
-            If CorrectAnswer = 1 Then
-                btnAnswer2.Hide()
-                btnAnswer3.Hide()
-                btnAnswer4.Hide()
-            ElseIf CorrectAnswer = 2 Then
-                btnAnswer1.Hide()
-                btnAnswer3.Hide()
-                btnAnswer4.Hide()
-            ElseIf CorrectAnswer = 3 Then
-                btnAnswer1.Hide()
-                btnAnswer2.Hide()
-                btnAnswer4.Hide()
-            Else
-                btnAnswer1.Hide()
-                btnAnswer2.Hide()
-                btnAnswer3.Hide()
-            End If
-            helpCorrectClicked += 1
-            btnHelpShow.Text = ""
-        End If
-    End Sub
+	Private Sub btnHelpShow_Click(sender As Object, e As EventArgs) Handles btnHelpShow.Click
+		If helpCorrectClicked = 0 Then
+			If CorrectAnswer = 1 Then
+				btnAnswer2.Hide()
+				btnAnswer3.Hide()
+				btnAnswer4.Hide()
+			ElseIf CorrectAnswer = 2 Then
+				btnAnswer1.Hide()
+				btnAnswer3.Hide()
+				btnAnswer4.Hide()
+			ElseIf CorrectAnswer = 3 Then
+				btnAnswer1.Hide()
+				btnAnswer2.Hide()
+				btnAnswer4.Hide()
+			Else
+				btnAnswer1.Hide()
+				btnAnswer2.Hide()
+				btnAnswer3.Hide()
+			End If
+			helpCorrectClicked += 1
+			btnHelpShow.Text = ""
+		End If
+	End Sub
 End Class
