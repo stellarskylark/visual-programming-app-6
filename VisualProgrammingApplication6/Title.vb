@@ -33,11 +33,10 @@
 
     Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
 
-        Game.Show()
+		Difficulty.Show()
+	End Sub
 
-    End Sub
-
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+	Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         changeColorTitle()
 

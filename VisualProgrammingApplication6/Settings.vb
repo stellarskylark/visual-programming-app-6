@@ -1,98 +1,108 @@
 ﻿Public Class Settings
 
-    'Sets default game settings
-    Dim gameDifficulty = 1
-    Dim timerStartNum = 30
-    Dim questionSet = "All"
-    Dim numQuestions = 30
+	'Sets default game settings
+	Dim gameDifficulty = 1
+	Dim timerStartNum = 30
+	Dim questionSet = "All"
+	Dim numQuestions = 30
 
-    Private Sub btnSaveChanges_Click(sender As Object, e As EventArgs) Handles btnSaveChanges.Click
+	Private Sub btnSaveChanges_Click(sender As Object, e As EventArgs) Handles btnSaveChanges.Click
 
-        'sets the game difficulty based on the selected option
-        If Me.cboDifficulty.Text = "Medium" Then
+		'sets the game difficulty based on the selected option
+		If Me.cboDifficulty.Text = "Medium" Then
 
-            gameDifficulty = 2
+			gameDifficulty = 2
 
-        ElseIf Me.gameDifficulty.text = "Hard" Then
+		ElseIf Me.gameDifficulty.text = "Hard" Then
 
-            gameDifficulty = 3
+			gameDifficulty = 3
 
-        ElseIf Me.gameDifficulty.text = "Extreme" Then
+		ElseIf Me.gameDifficulty.text = "Extreme" Then
 
-            gameDifficulty = 4
+			gameDifficulty = 4
 
-        Else
+		Else
 
-            gameDifficulty = 1
+			gameDifficulty = 1
 
-        End If
+		End If
 
-        'Sets question set based on selected option
-        If Me.cboQuestionSet.Text = "History" Then
+		'Sets question set based on selected option
+		If Me.cboQuestionSet.Text = "History" Then
 
-            questionSet = "Hist"
+			questionSet = "Hist"
 
-        ElseIf Me.cboQuestionSet.Text = "Science" Then
+		ElseIf Me.cboQuestionSet.Text = "Science" Then
 
-            questionSet = "Sci"
+			questionSet = "Sci"
 
-        ElseIf Me.cboQuestionSet.Text = "Pop Culture" Then
+		ElseIf Me.cboQuestionSet.Text = "Pop Culture" Then
 
-            questionSet = "Pop"
+			questionSet = "Pop"
 
-        ElseIf Me.cboQuestionSet.Text = "Custom" Then
+		ElseIf Me.cboQuestionSet.Text = "Custom" Then
 
-            questionSet = "Cust"
+			questionSet = "Cust"
 
-        Else
+		Else
 
-            questionSet = "All"
+			questionSet = "All"
 
-        End If
+		End If
 
-        'sets game timer to selected value
-        timerStartNum = numTimer
+		If gameDifficulty = 2 Then 'Based on the game Difficulty, it sets the timer
+				timerStartNum = 60
+			ElseIf Me.gameDifficulty = 3 Then
+				timerStartNum = 30
+			ElseIf Me.gameDifficulty = 4 Then
+				timerStartNum = 20
+			Else
+				timerStartNum = 150
+			End If
 
-        If Me.cboQuestionNum.Text = 15 Then
+			'sets game timer to selected value
+			timerStartNum = numTimer
 
-            numQuestions = 15
+			If Me.cboQuestionNum.Text = 15 Then
 
-        ElseIf Me.cboQuestionNum.Text = 100 Then
+				numQuestions = 15
 
-            numQuestions = 100
+			ElseIf Me.cboQuestionNum.Text = 100 Then
 
-        ElseIf Me.cboQuestionNum.Text = 45 Then
+				numQuestions = 100
 
-            numQuestions = 45
+			ElseIf Me.cboQuestionNum.Text = 45 Then
 
-        ElseIf Me.cboQuestionNum.Text = 60 Then
+				numQuestions = 45
 
-            numQuestions = 60
+			ElseIf Me.cboQuestionNum.Text = 60 Then
 
-        ElseIf Me.cboQuestionNum.Text = 80 Then
+				numQuestions = 60
 
-            numQuestions = 80
+			ElseIf Me.cboQuestionNum.Text = 80 Then
 
-        Else
+				numQuestions = 80
 
-            numQuestions = 30
+			Else
 
-        End If
+				numQuestions = 30
 
-        Close()
+			End If
 
-    End Sub
+			Close()
 
-    Private Sub btnClearCustomSets_Click(sender As Object, e As EventArgs) Handles btnClearCustomSets.Click
+	End Sub
 
-    End Sub
+	Private Sub btnClearCustomSets_Click(sender As Object, e As EventArgs) Handles btnClearCustomSets.Click
 
-    Private Sub btnClearLeaderboard_Click(sender As Object, e As EventArgs) Handles btnClearLeaderboard.Click
+	End Sub
 
-    End Sub
+	Private Sub btnClearLeaderboard_Click(sender As Object, e As EventArgs) Handles btnClearLeaderboard.Click
 
-    Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+	End Sub
 
-    End Sub
+	Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+	End Sub
 
 End Class
