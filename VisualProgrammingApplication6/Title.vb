@@ -83,5 +83,4 @@
 									"John Adams"))
 	End Sub
 
-
 End Class
