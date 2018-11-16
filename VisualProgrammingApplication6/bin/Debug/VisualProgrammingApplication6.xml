@@ -22,5 +22,10 @@ VisualProgrammingApplication6
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:VisualProgrammingApplication6.My.Resources.Resources.GoldDollarSign">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

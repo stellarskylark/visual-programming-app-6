@@ -24,3 +24,7 @@ C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplic
 C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.exe
 C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.xml
 C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.pdb
+C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.Game.resources
+C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.About.resources
+C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.Custom.resources
+C:\Users\user1\Documents\GitHub\visual-programming-app-6\VisualProgrammingApplication6\obj\Debug\VisualProgrammingApplication6.Score.resources
